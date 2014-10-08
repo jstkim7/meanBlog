@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/jstkim7/meanBlog",
   "dependencies": {
-    "express": "^4.9.5",
-    "foundation": "^4.2.1-1"
+    "express": "^4.9.5"
   }
 }
