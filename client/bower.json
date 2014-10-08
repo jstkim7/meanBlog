@@ -1,0 +1,8 @@
+{
+  "name": "meanBlogClient",
+  "dependencies": {
+    "angular": "~1.2.26",
+    "angular-route": "~1.2.26",
+    "foundation": "~5.4.5"
+  }
+}
