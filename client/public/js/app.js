@@ -19,7 +19,7 @@ angular.module('meanBlog', ['ngRoute'])
 
     .when('/articles/edit', {
       templateUrl: 'views/articles/articleForm.html'
-    })
+    });
 
     $locationProvider.html5Mode(true);
   }]);
