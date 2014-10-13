@@ -1,5 +1,11 @@
 var express = require('express');
+var cors = require('cors');
+var morgan = require('morgan');
 var api = express();
+
+
+api.use(morgan('combined'));
+api.use(cors());
 
 require('./config');
 

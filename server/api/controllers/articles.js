@@ -18,6 +18,9 @@ exports.getArticle = function(req, res) {
 
 exports.postArticle = function(req, res) {
   var article = new Article();
+  console.log('here I am');
+  console.log('************************************');
+  console.log(req);
 
   article.title = req.body.title;
   article.content = req.body.content;
