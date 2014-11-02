@@ -7,22 +7,22 @@ angular.module('meanBlog', ['ngRoute', 'ngResource'])
 
     .when('/', {
       templateUrl: 'views/articles/articles.html',
-      controller: 'ArticleController'
+      controller: 'ArticlesController'
     })
 
     .when('/articles/new', {
       templateUrl: 'views/articles/articleForm.html',
-      controller: 'NewArticleCtrl'
-    })
-
-    .when('/articles/edit', {
-      templateUrl: 'views/articles/articleForm.html',
-      controller: 'ArticleCtrl'
+      controller: 'NewArticleController'
     })
 
     .when('/articles/:article_id', {
       templateUrl: 'views/articles/article.html',
-      controller: 'ArticleCtrl'
+      controller: 'ArticleController'
+    })
+
+    .when('/articles/:article_id/edit', {
+      templateUrl: 'views/articles/articleForm.html',
+      controller: 'EditArticleController'
     });
 
     $locationProvider.html5Mode(true);
