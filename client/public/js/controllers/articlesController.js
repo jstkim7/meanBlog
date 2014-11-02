@@ -35,6 +35,10 @@ angular.module('meanBlog')
 
     $scope.article = Article.get({ article_id: $routeParams.article_id });
 
-    
+    $scope.submitForm = function() {
+      $scope.article.$update(function() {
+        $location.path("/articles/" + $scope.article._id);
+      });
+    };
 
   }]);
