@@ -45,7 +45,7 @@ exports.putArticle = function(req, res) {
 };
 
 exports.deleteArticle = function(req, res) {
-  Article.findByIdAndRemove(req.params.beer_id, function(err) {
+  Article.findByIdAndRemove(req.params.article_id, function(err) {
     if (err) return res.send(err);
 
     res.json({ message: "Removed." });

@@ -28,6 +28,7 @@ angular.module('meanBlog')
         $location.path("/articles/" + newArticle._id);
       });
     }
+
   }])
 
 .controller('EditArticleController', ['$scope', '$location', '$routeParams', 'Article',
@@ -40,5 +41,11 @@ angular.module('meanBlog')
         $location.path("/articles/" + $scope.article._id);
       });
     };
+
+    $scope.delete = function() {
+      $scope.article.$delete(function() {
+        $location.path("/");
+      });
+    }
 
   }]);
